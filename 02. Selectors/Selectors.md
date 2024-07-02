@@ -7,7 +7,7 @@
 
 # Element Selector
 
- ```
+ ```css
    body
    {
       font-size: 22px;
@@ -18,7 +18,7 @@
  * It'll happen due to inheritance, all other elemets will inherit this property from body.
  * Here, dur to `border`, a border created only over body element (Not inherite into all the elements under body) (Black Border).
 
- ```
+ ```css
    p
    {
       color: purple;
@@ -26,7 +26,7 @@
  ```
  * It'll change the colour of all the fonts in that element (`p` / Paragraph Element).
 
- ```
+ ```css
    h1, h2
    {
       color: blue;
@@ -36,7 +36,7 @@
  * If we don't put `,` in between them then it'll be looking for any `h2` that exist or nested inside `h1`.
  * It'll change colour of all fonts inside `h1` & `h2` elements.
 
- ```
+ ```css
    p span
    {
       text-transform: uppercase;
@@ -46,7 +46,7 @@
  * It'll transform the text in uppercase which are under `span` element which is inside `p` element & also change the background colour.
  * We can you class (`highlight`) rather than this.
 
- ```
+ ```css
     button, input, textarea, select
     {
       font: inherit;
@@ -54,7 +54,7 @@
  ```
  * Due to this, font setting will be inherit from `body` for `button`, `input`, `textarea` & `select`.
 
- ```
+ ```css
     html
     {
       font-size: 22px;
@@ -62,7 +62,7 @@
  ```
  * We use this element mostly for inherit its value to other elements.
 
- ```
+ ```css
     main
     {
       font-family: monospace;
@@ -72,7 +72,7 @@
 
 # Class Selector
 
- ```
+ ```css
    .gray
    {
       color: gray;
@@ -82,7 +82,7 @@
  * It'll change colour of fonts which are under class `gray` (Paragraph of Article 2 & 3).
  * Classes are more specific than selecting all the paragraph (by paragraph element).
 
- ```
+ ```css
    .highlight
    {
       text-transform: uppercase;
@@ -92,7 +92,7 @@
 
 # ID Selector
 
- ```
+ ```css
    #second
    {
       font-style: italic;
@@ -106,7 +106,7 @@
 # Universal Selector
 
  * It's selecting everything on the page.
- ```
+ ```css
    *
    {
       border: 1px solid green;

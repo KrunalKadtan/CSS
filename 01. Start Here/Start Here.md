@@ -13,11 +13,11 @@
    3. CSS In-Line within Element
 
  * **External Stylesheet :**
- ```
+ ```html
     // link in HTML File
     <link rel="stylesheet" href="style.css">
  ``` 
- ```
+ ```css
     // CSS File
     p
     {
@@ -31,7 +31,7 @@
    * `color: purple` --> Declaration
 
  * **Internal Stylesheet :**
- ```
+ ```html
     // in HTML File
     <style>
         p
@@ -42,7 +42,7 @@
  ```
 
  * **CSS in-line :**
- ```
+ ```html
     <p style="color: blue">I'm learning CSS..!</p>
  ```
 

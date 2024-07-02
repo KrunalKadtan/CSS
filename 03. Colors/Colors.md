@@ -17,7 +17,7 @@
  * We can set red colour by `rgb(255, 0, 0)`. For green `rgb(0, 255, 0)`, & for blue `rgb(0, 0, 255)`. For Black `rgb(0, 0, 0)` & White `rgb(255, 255, 255)`.
  * A stands for Alpha which is basically works as opacity. Its range is from **0** to **1**.
 
- ```
+ ```css
  body {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
