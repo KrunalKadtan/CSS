@@ -276,3 +276,129 @@ h2 {
 - `-webkit-background-clip: text;` and `background-clip: text;`, These properties clip the background image to the text. The `-webkit-` prefix is necessary for compatibility with WebKit-based browsers like Chrome and Safari.
 
 - `color: transparent;` makes the text color transparent, allowing the background image to be visible through the text.
+
+#
+
+- Gradients are used to create smooth transitions between two or more specified colors.
+
+## 1. Linear Gradient
+
+A linear gradient transitions colors along a straight line.
+
+#### Syntax :
+
+```css
+background: linear-gradient(direction, color-stop1, color-stop2, ...);
+```
+
+#### Examples
+
+- Top to bottom gradient :
+```css
+background: linear-gradient(to bottom, red, yellow);
+```
+
+- Left to right gradient :
+```css
+background: linear-gradient(to right, red, yellow);
+```
+
+- Diagonal gradient :
+```css
+background: linear-gradient(to bottom right, red, yellow);
+```
+
+- With multiple color stops :
+```css
+background: linear-gradient(to right, red, yellow, green, blue);
+```
+
+## 2. Radial Gradient
+
+A radial gradient transitions colors outward from a central point in a circular or elliptical shape.
+
+#### Syntax :
+
+```css
+background: radial-gradient(shape size at position, start-color, ..., last-color);
+```
+
+#### Examples
+
+- Default radial gradient (circle) :
+```css
+background: radial-gradient(circle, red, yellow, green);
+```
+
+- Elliptical Gradient :
+```css
+background: radial-gradient(ellipse, red, yellow, green);
+```
+
+- Positioned radial gradient :
+```css
+background: radial-gradient(circle at center, red, yellow, green);
+```
+
+## 3. Conic Gradient
+
+- A conic gradient transitions colors around a central point, like the colors on a pie chart.
+
+#### Syntax :
+
+```css
+background: conic-gradient(from angle at position, color-stop1, color-stop2, ...);
+```
+
+#### Examples
+
+- Default conic gradient :
+```css
+background: conic-gradient(red, yellow, green, blue);
+```
+
+- Conic gradient with starting angle :
+```css
+background: conic-gradient(from 45deg, red, yellow, green, blue);
+```
+
+- Positioned conic gradient :
+```css
+background: conic-gradient(at center, red, yellow, green, blue);
+```
+
+## 4. Repeating Gradient
+
+- Repeating gradients repeat the gradient pattern.
+  
+#### Repeating Linear Gradient:
+
+```css
+background: repeating-linear-gradient(direction, color-stop1, color-stop2, ...);
+```
+
+#### Repeating Radial Gradient:
+
+```css
+background: repeating-radial-gradient(shape size at position, start-color, ..., last-color);
+```
+
+#### Repeating Conic Gradient :
+
+```css
+background: repeating-conic-gradient(from angle at position, color-stop1, color-stop2, ...);
+```
+
+#### Examples
+
+```css
+background: repeating-linear-gradient(to right, red, yellow 10%, green 20%);
+```
+
+```css
+background: repeating-radial-gradient(circle, red, yellow 10%, green 20%);
+```
+
+```css
+background: repeating-conic-gradient(from 0deg, red, yellow 10%, green 20%);
+```
